@@ -1,6 +1,6 @@
 # AlScreenie
 
-A python script based GUI interface for web search engine.
+A python script based GUI interface for screen recording.
 
 ## Installation
 
