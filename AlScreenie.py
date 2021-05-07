@@ -3,7 +3,6 @@ from PyQt5.QtGui import *
 import datetime
 import cv2 
 import numpy as np
-import time
 from dateutil.relativedelta import relativedelta
 from PIL import ImageGrab
 from UI.AlScreenieUI import Ui_Form
@@ -49,7 +48,8 @@ class AlScreenie(MoveWidget, Ui_Form):
         fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
         capturedVideo = cv2.VideoWriter(filePath, fourcc, 20.0, (self.W, self.H))
         while(True):
-            frame = np.array(ImageGrab.grab(bbox=(0,0,self.W,self.H)))
+            frame = ImageGrab.grab(bbox=(0,0,self.W,self.H))
+            frame = np.array(frame)
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             self.label.setText('RECORDING')
             capturedVideo.write(frame)
