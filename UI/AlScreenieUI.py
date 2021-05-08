@@ -11,7 +11,7 @@ class Ui_Form(object):
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
         self.widget = QtWidgets.QWidget(Form)
-        self.widget.setStyleSheet("background-color:rgba(31,31,31,255);")
+        self.widget.setStyleSheet("background-color:rgba(31,31,31,255); font-family:OnePlus Sans Display;")
         self.widget.setObjectName("widget")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout_2.setContentsMargins(9, -1, 9, -1)
