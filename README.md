@@ -20,3 +20,9 @@ pip install Pillow
 
 1. Start the recording by clicking on record button.
 2. Stop recording by clicking on stop button.
+
+## Contributor
+
+<a href="https://github.com/alankarartist/ALSCREENIE/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=alankarartist/ALSCREENIE" />
+</a>
